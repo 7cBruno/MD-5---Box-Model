@@ -1,0 +1,79 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.moldura {
+  width: 500px;
+  
+  margin: 20px auto;
+  border: solid black 50px;
+  padding: 50px;
+}
+
+.tela {
+  width: 500px;
+  height: 600px;
+
+  /*
+  Overflow: Especifica o que se fazer com conteúdos maiores que suas caixas.
+  Neste caso, ele corta o conteúdo excedente e não cria uma barra de rolangem.
+  */
+  overflow: hidden;
+  
+  background-color: #4d0f00;
+  /*
+  Filter: Adiciona filtro às imagen, neste caso, efeito de desfoque.
+  */
+  filter: blur(2px);
+}
+
+.pintura1 {
+  width: 425px;
+  height: 150px;
+  
+  margin: 20px auto;
+  /* Adiciona borda com 9px em cada canto */
+  border-radius: 9px;
+  
+  background-color: #efb762;
+  /* Box-Shadow: Adiciona sobra ao elemento, seus valores são: direção-x, direção-y, brilho, tamanho e cor */
+  box-shadow: 0 0 3px 3px #efb762;
+  /* Transform: Aplica uma transformção ao elemento.
+  Neste caso, ele gira o elemento em 6 graus no sentido anti-horário. */
+  transform: rotate(-0.6deg);
+  
+}
+
+.pintura2 {
+  width: 475px;
+  height: 200px;
+  
+  margin: 0 auto 20px;
+  /* Add borda com 8px à Top-esquerdo e bottom-direito
+  e 10px à top-direita e bottom-esquerda */
+  border-radius: 8px 10px;
+  
+  background-color: #8f0401;
+  box-shadow: 0 0 3px 3px #8f0401;
+
+  transform: rotate(0.4deg);
+}
+
+pintura1, pintura2 {
+  filter: blur(1px);
+}
+
+.pintura3 {
+  width: 91%;
+  height: 28%;
+
+  margin: auto;
+  /* Add px às bordas, top-esquerda, top-direita, bottom-direita, bottom-esquerda */
+  border-radius: 30px 25px 60px 12px;
+  
+  background-color: #b20403;
+  box-shadow: 0 0 5px 5px #b20403;
+  filter: blur(2px);
+  transform: rotate(0.2deg);
+}
